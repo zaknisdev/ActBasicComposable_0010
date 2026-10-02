@@ -100,6 +100,20 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     color = Color.White
                 )
             }
+
+            // Bagian bawah: foto dalam lingkaran
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Image(
+                    painter = foto,
+                    contentDescription = "Foto profil",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(180.dp)
+                        .clip(CircleShape)
+                        .border(width = 3.dp, color = Color.Yellow, shape = CircleShape)
+                )
+                Spacer(modifier = Modifier.height(40.dp))
+            }
         }
     }
 }
