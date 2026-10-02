@@ -40,5 +40,11 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop,
             modifier = Modifier.fillMaxSize()
         )
+        // Lapisan gelap agar teks terbaca di atas background
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(color = Color.Black.copy(alpha = 0.55f))
+        )
     }
 }
