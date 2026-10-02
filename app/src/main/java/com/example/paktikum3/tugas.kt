@@ -25,6 +25,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.paktikum3.ui.theme.BiruUmy
+import com.example.paktikum3.ui.theme.KuningBingkai
+import com.example.paktikum3.ui.theme.MerahLabel
 import com.example.paktikum3.ui.theme.Paktikum3Theme
 
 @Composable
@@ -62,7 +65,7 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     text = stringResource(R.string.judul_login),
                     fontSize = 36.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Blue
+                    color = BiruUmy
                 )
                 Text(
                     text = stringResource(R.string.deskripsi_login),
@@ -86,13 +89,13 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     text = stringResource(R.string.label_nama),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Red
+                    color = MerahLabel
                 )
                 Text(
                     text = stringResource(R.string.nama),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color.Blue
+                    color = BiruUmy
                 )
                 Text(
                     text = stringResource(R.string.nim),
@@ -111,7 +114,7 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .size(180.dp)
                         .clip(CircleShape)
-                        .border(width = 3.dp, color = Color.Yellow, shape = CircleShape)
+                        .border(width = 3.dp, color = KuningBingkai, shape = CircleShape)
                 )
                 Spacer(modifier = Modifier.height(40.dp))
             }
