@@ -78,6 +78,28 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                         .clip(CircleShape)
                 )
             }
+
+            // Bagian tengah: identitas
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Text(
+                    text = "Nama",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Red
+                )
+                Text(
+                    text = "Zaki Anis Fauzan",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue
+                )
+                Text(
+                    text = "20240140010",
+                    fontSize = 26.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
+            }
         }
     }
 }
