@@ -46,5 +46,38 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 .fillMaxSize()
                 .background(color = Color.Black.copy(alpha = 0.55f))
         )
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceBetween
+        ) {
+            // Bagian atas: judul dan logo
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                Spacer(modifier = Modifier.height(24.dp))
+                Text(
+                    text = "Login",
+                    fontSize = 36.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Blue
+                )
+                Text(
+                    text = "Ini adalah halaman login,",
+                    fontSize = 16.sp,
+                    color = Color.White
+                )
+                Spacer(modifier = Modifier.height(16.dp))
+                Image(
+                    painter = logo,
+                    contentDescription = "Logo UMY",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(130.dp)
+                        .clip(CircleShape)
+                )
+            }
+        }
     }
 }
