@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Pertemuan3</string>
     <string name="kota">Yogyakarta</string>
+    <string name="judul_login">Login</string>
+    <string name="deskripsi_login">Ini adalah halaman login,</string>
+    <string name="label_nama">Nama</string>
+    <string name="nama">Zaki Anis Fauzan</string>
+    <string name="nim">20240140010</string>
+    <string name="desc_logo">Logo UMY</string>
+    <string name="desc_foto">Foto profil</string>
 </resources>

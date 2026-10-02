@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -58,20 +59,20 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Spacer(modifier = Modifier.height(24.dp))
                 Text(
-                    text = "Login",
+                    text = stringResource(R.string.judul_login),
                     fontSize = 36.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Blue
                 )
                 Text(
-                    text = "Ini adalah halaman login,",
+                    text = stringResource(R.string.deskripsi_login),
                     fontSize = 16.sp,
                     color = Color.White
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 Image(
                     painter = logo,
-                    contentDescription = "Logo UMY",
+                    contentDescription = stringResource(R.string.desc_logo),
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .size(130.dp)
@@ -82,19 +83,19 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
             // Bagian tengah: identitas
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
-                    text = "Nama",
+                    text = stringResource(R.string.label_nama),
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Red
                 )
                 Text(
-                    text = "Zaki Anis Fauzan",
+                    text = stringResource(R.string.nama),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.Blue
                 )
                 Text(
-                    text = "20240140010",
+                    text = stringResource(R.string.nim),
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color.White
@@ -105,7 +106,7 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Image(
                     painter = foto,
-                    contentDescription = "Foto profil",
+                    contentDescription = stringResource(R.string.desc_foto),
                     contentScale = ContentScale.Crop,
                     modifier = Modifier
                         .size(180.dp)
