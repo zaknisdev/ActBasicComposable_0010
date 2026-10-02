@@ -19,11 +19,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.paktikum3.R
+import com.example.paktikum3.ui.theme.Paktikum3Theme
 
 
 @Composable
@@ -173,5 +175,76 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                     alignment = Alignment.Center)
             )
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ContohColumnPreview() {
+    Paktikum3Theme {
+        contohColumn(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun ContohRowPreview() {
+    Paktikum3Theme {
+        contohRow(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakColumnPreview() {
+    Paktikum3Theme {
+        TataletakColumn(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakRowPreview() {
+    Paktikum3Theme {
+        TataletakRow(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakBoxPreview() {
+    Paktikum3Theme {
+        TataletakBox(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakColumnRowPreview() {
+    Paktikum3Theme {
+        TataletakColumnRow(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakRowColumnPreview() {
+    Paktikum3Theme {
+        TataletakRowColumn(modifier = Modifier)
+    }
+}
+
+
+@Preview(showBackground = true)
+@Composable
+fun TataletakBoxColumnRowPreview() {
+    Paktikum3Theme {
+        TataletakBoxColumnRow(modifier = Modifier)
     }
 }
