@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.paktikum3.ui.theme.Paktikum3Theme
+import com.example.paktikum3.HalamanLogin
 import com.example.paktikum3.ui.theme.Paktikum3Theme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
             Paktikum3Theme() {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     // Panggil composable layout utama dengan padding dari Scaffold
-                    TataletakBoxColumnRow(
+                    HalamanLogin(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
